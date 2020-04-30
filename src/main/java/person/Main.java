@@ -8,8 +8,6 @@ import java.time.ZoneId;
 import java.util.List;
 
 public class Main {
-    private static int NUM_OF_PEOPLE = 1000;
-
     private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpa-example");
 
     private static Person randomPerson()
