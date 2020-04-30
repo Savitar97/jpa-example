@@ -34,7 +34,7 @@ public class Main {
     {
         EntityManager em = emf.createEntityManager();
         try {
-            return em.createQuery("SELECT p FROM Person p", Person.class).getResultList();
+            return em.createQuery("SELECT persons FROM Person persons", Person.class).getResultList();
         } finally {
             em.close();
         }
